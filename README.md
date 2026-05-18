@@ -86,7 +86,6 @@
 ---
 
 ## 📁 项目结构
-
 smart-community-management
 ├── 前端/scm-front/ # Vue.js 前端项目
 │ ├── src/
@@ -146,7 +145,7 @@ spring:
     password: your_password
     如果有其他环境变量（例如百度千帆 API Key），也在此处或通过环境变量配置。
 
-    ▶️ 5. 启动后端
+▶️ 5. 启动后端
 cd 后端/smart-community-management
 mvn spring-boot:run
 后端服务启动后，运行在 http://localhost:8888。
