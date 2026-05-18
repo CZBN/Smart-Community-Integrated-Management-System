@@ -1,6 +1,5 @@
 # 🏘️ 智慧社区综合管理系统 (Smart Community Management System)
 
-> **毕业设计 / 课程设计项目**  
 > 基于 Spring Boot + Vue 的前后端分离智慧社区管理平台  
 > 集成百度文心一言 AI 智能助手
 
