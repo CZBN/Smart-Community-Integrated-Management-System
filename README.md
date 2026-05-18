@@ -120,56 +120,49 @@ smart-community-management
 ## 🚀 快速开始（本地部署）
 
 ### 📥 1. 克隆仓库
-
-```bash
 git clone https://github.com/CZBN/smart-community-management.git
 cd smart-community-management
+
 ⚙️ 2. 环境准备
 确保你的本地环境已安装：
-
 JDK 1.8 或更高版本
-
 Node.js 14.x 或更高版本
-
 MySQL 5.7 或更高版本
-
 Maven 3.6 或更高版本
 
 🗄️ 3. 数据库初始化
 登录 MySQL，创建一个新数据库（例如 smart_community）：
 CREATE DATABASE smart_community DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
 导入项目中提供的 SQL 脚本：
-bash
 mysql -u root -p smart_community < 后端/smart-community-management/src/main/resources/sql/init.sql
-如果 SQL 文件是分开的，请按顺序导入。
+
 🔧 4. 后端配置
 打开 后端/smart-community-management/src/main/resources/application.yml（或 application-dev.yml），修改数据库连接信息：
-
-yaml
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/smart_community?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
     username: your_username
     password: your_password
-如果有其他环境变量（例如百度千帆 API Key），也在此处或通过环境变量配置。
-▶️ 5. 启动后端
-bash
+    如果有其他环境变量（例如百度千帆 API Key），也在此处或通过环境变量配置。
+
+    ▶️ 5. 启动后端
 cd 后端/smart-community-management
 mvn spring-boot:run
 后端服务启动后，运行在 http://localhost:8888。
+
 🎨 6. 启动前端
-bash
 cd 前端/scm-front
 npm install
 npm run serve
 前端开发服务器启动后，访问 http://localhost:8081（或终端提示的地址）即可看到系统界面。
+
 🤝 贡献与交流
 作者：橙汁冰
 
 邮箱：2915962508@qq.com
 
 如果你对这个项目有任何建议或想法，欢迎提交 Issue 或 Pull Request。
-
 📄 开源协议
 本项目采用 MIT License。你可以自由使用、修改和分发，但请保留原作者信息。
 
